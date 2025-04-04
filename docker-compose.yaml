@@ -1,0 +1,13 @@
+services:
+  react_bar_site:
+    container_name: react_bar_site
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    networks:
+      - main_sites
+
+networks:
+  main_sites:
+    external: true
