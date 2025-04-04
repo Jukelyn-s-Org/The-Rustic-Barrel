@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import NavbarItems from "@/src/components/navbar-items";
 
 interface Props {
   locationTitle?: string;
@@ -21,7 +22,7 @@ export default function Navbar({ locationTitle = "The Rustic Barrel" }: Props) {
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <Image
-            src="https://placehold.co/40"
+            src="/assets/barrel-wood.svg"
             alt="The Rustic Barrel Logo"
             width={40}
             height={40}
@@ -36,67 +37,22 @@ export default function Navbar({ locationTitle = "The Rustic Barrel" }: Props) {
             {isOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
           </button>
         </div>
-
-        {/* Navigation Links (Visible on larger screens) */}
-        <ul className="hidden md:flex space-x-4">
-          <li>
-            <Link href="/" className="hover:text-amber-300">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/menu" className="hover:text-amber-300">
-              Menu
-            </Link>
-          </li>
-          <li>
-            <Link href="/events" className="hover:text-amber-300">
-              Events
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" className="hover:text-amber-300">
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className="hover:text-amber-300">
-              About Us
-            </Link>
-          </li>
-        </ul>
+        <NavbarItems ulClassName="hidden md:flex space-x-4" />
       </div>
 
-      {/* Collapsible Menu (Visible on smaller screens when isOpen is true) */}
       {isOpen && (
-        <div className="md:hidden bg-amber-900 py-2">
-          <ul className="flex flex-col items-center space-y-2">
-            <li>
-              <Link href="/" className="hover:text-amber-300">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/menu" className="hover:text-amber-300">
-                Menu
-              </Link>
-            </li>
-            <li>
-              <Link href="/events" className="hover:text-amber-300">
-                Events
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:text-amber-300">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="hover:text-amber-300">
-                About Us
-              </Link>
-            </li>
-          </ul>
+        <div className="md:hidden fixed top-0 left-0 w-full h-fit bg-amber-900 z-20 flex flex-col items-center justify-start py-20">
+          <button
+            onClick={toggleMenu}
+            className="absolute top-4 right-4 text-2xl focus:outline-none"
+          >
+            <AiOutlineClose />
+          </button>
+          <NavbarItems
+            ulClassName="flex flex-col items-center space-y-6 text-lg"
+            listItemClassName="border-4 border-amber-100 rounded-lg p-4 w-full"
+            buttonClassName="w-full block text-center"
+          />
         </div>
       )}
     </nav>
