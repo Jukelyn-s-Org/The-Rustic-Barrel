@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "The Rustic Barrel",
   description:
     "Stylish neighborhood joint with bar games, a covered patio offering cocktails, and craft beers on tap.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
