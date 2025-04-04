@@ -19,9 +19,9 @@ export default function ContactPage() {
           Contact Us
         </h1>
         <p className="text-xl text-center mb-12 text-amber-800">
-          We'd love to hear from you! Whether you have a question, feedback, or
-          just want to say hello, feel free to reach out. Our team is here to
-          help!
+          We&apos;d love to hear from you! Whether you have a question,
+          feedback, or just want to say hello, feel free to reach out. Our team
+          is here to help!
         </p>
 
         <div className="bg-amber-100 p-8 rounded-lg shadow-lg mb-6 flex items-start justify-between">
@@ -39,7 +39,7 @@ export default function ContactPage() {
             </div>
             <div className="mb-6">
               <h2 className="text-amber-800 text-l font-semibold mb-3 flex items-center">
-                <Clock className="mr-3" /> We're open from:
+                <Clock className="mr-3" /> We&apos;re open from:
               </h2>
               <ul className="text-amber-900 space-y-2">
                 <li>Monday - Friday: 4:00 PM - 2:00 AM</li>
