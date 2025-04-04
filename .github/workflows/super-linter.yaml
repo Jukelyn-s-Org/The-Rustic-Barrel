@@ -6,9 +6,7 @@ on:
     branches: ["main"]
     paths:
       - "src/**"
-      - "static/**"
-      - "templates/**"
-      - "data/**"
+      - "app/**"
       - "docker-compose.yaml"
       - "Dockerfile"
 
