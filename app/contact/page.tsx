@@ -1,4 +1,5 @@
 import Navbar from "@/src/components/navbar";
+import MapEmbed from "@/src/components/map-embed";
 import { Clock } from "lucide-react";
 import { Phone } from "lucide-react";
 import { MailPlus } from "lucide-react";
@@ -25,7 +26,7 @@ export default function ContactPage() {
         </p>
 
         <div className="bg-amber-100 p-8 rounded-lg shadow-lg mb-6 flex items-start justify-between">
-          <div>
+          <div className="mr-32 md:mr-16">
             <div className="mb-6">
               <h2 className="text-2xl font-semibold mb-6 text-amber-900">
                 Our Location
@@ -33,9 +34,7 @@ export default function ContactPage() {
               <p className="text-amber-800 font-semibold mb-3">
                 Come find us at:
               </p>
-              <p className="text-amber-800">
-                805 N Person St, Raleigh, NC 27604
-              </p>
+              <p className="text-amber-800">123 N Main St, Raleigh, NC 27604</p>
             </div>
             <div className="mb-6">
               <h2 className="text-amber-800 text-l font-semibold mb-3 flex items-center">
@@ -51,7 +50,7 @@ export default function ContactPage() {
                 <Phone className="mr-3" />
                 <p className="mr-2">Phone:</p>
                 <p className="text-amber-800">
-                  <a href="tel:+19199775952">(919) 977-5952</a>
+                  <a href="tel:+1123456789">(123) 456-6789</a>
                 </p>
               </div>
             </div>
@@ -59,32 +58,29 @@ export default function ContactPage() {
               <div className="text-amber-800 text-l font-semibold mb-3 flex items-center">
                 <MailPlus className="mr-3" />
                 <p className="mr-2">Email:</p>
-                <p>info@personstreetbar.com</p>
+                <p>email@domain.com</p>
               </div>
             </div>
             <div className="mb-6">
               <div className="text-amber-800 text-l font-semibold mb-3 flex items-center">
                 <SiInstagram className="mr-2" />
-                <p className="mr-2">@personstreetbar</p>
+                <p className="mr-2">@ig_handle</p>
               </div>
             </div>
             <div className="mb-6">
               <div className="text-amber-800 text-l font-semibold mb-3 flex items-center">
                 <SiFacebook className="mr-2" />
-                <p className="mr-2">@personstreetbar</p>
+                <p className="mr-2">@fb_handle</p>
               </div>
             </div>
           </div>
-          <div className="rounded-md overflow-hidden flex-shrink-0">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.3842768687477!2d-78.63717652379341!3d35.79049837255225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac5f407bd89e8b%3A0xa8fc15287aafbd34!2sPerson%20Street%20Bar!5e0!3m2!1sen!2sus!4v1743790997864!5m2!1sen!2sus"
-              width="600"
-              height="450"
-              style={iframeStyle}
-              allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>{" "}
+          <div className="relative w-full">
+            <div className="rounded-md overflow-hidden h-0 pt-[56.25%]">
+              <MapEmbed
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8935.29583198748!2d-78.64261485310122!3d35.783242269747866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac5f6c3a7f1ddf%3A0x1096b921c8d1721d!2sNorth%20Carolina%20State%20Capitol!5e0!3m2!1sen!2sus!4v1743797827541!5m2!1sen!2sus"
+                style={iframeStyle}
+              />
+            </div>
           </div>
         </div>
       </div>

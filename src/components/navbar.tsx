@@ -9,7 +9,7 @@ interface Props {
   locationTitle?: string;
 }
 
-export default function Navbar({ locationTitle = "Person Street Bar" }: Props) {
+export default function Navbar({ locationTitle = "The Rustic Barrel" }: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -22,7 +22,7 @@ export default function Navbar({ locationTitle = "Person Street Bar" }: Props) {
         <Link href="/" className="flex items-center">
           <Image
             src="https://placehold.co/40"
-            alt="Person Street Bar Logo"
+            alt="The Rustic Barrel Logo"
             width={40}
             height={40}
             className="mr-2"

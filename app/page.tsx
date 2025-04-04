@@ -9,7 +9,7 @@ export default function Home() {
       <Carousel />
       <div className="container mx-auto py-12">
         <h1 className="text-4xl font-bold text-center mb-8 text-amber-900">
-          Person Street Bar
+          The Rustic Barrel
         </h1>
         <p className="text-xl text-center mb-12 text-amber-800">
           Stylish neighborhood joint with bar games, a covered patio offering
