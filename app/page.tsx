@@ -8,7 +8,7 @@ export default function Home() {
       <Navbar />
       <Carousel />
       <div className="container mx-auto py-12">
-        <h1 className="text-4xl font-bold text-center mb-8 text-amber-900">
+        <h1 className="cursive-font text-4xl font-bold text-center mb-8 text-amber-900">
           The Rustic Barrel
         </h1>
         <p className="text-xl text-center mb-12 text-amber-800">
