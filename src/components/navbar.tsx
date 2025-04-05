@@ -28,7 +28,7 @@ export default function Navbar({ locationTitle = "The Rustic Barrel" }: Props) {
             height={40}
             className="mr-2"
           />
-          <span className="text-xl font-bold">{locationTitle}</span>
+          <span className="cursive-font text-xl font-bold">{locationTitle}</span>
         </Link>
 
         {/* Hamburger Menu Icon (Visible on smaller screens) */}
