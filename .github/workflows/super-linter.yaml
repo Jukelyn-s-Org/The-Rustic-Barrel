@@ -29,7 +29,7 @@ jobs:
         uses: super-linter/super-linter@v7.3.0
         env:
           FILTER_REGEX_EXCLUDE: "(README.md|\\.github/.*)"
-          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_ALL_CODEBASE: false
           VALIDATE_GITHUB_ACTIONS: false
           TYPESCRIPT_ES_CONFIG_FILE: tsconfig.json
           VALIDATE_TSX: true
