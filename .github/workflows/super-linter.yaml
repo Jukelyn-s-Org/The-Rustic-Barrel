@@ -30,8 +30,6 @@ jobs:
         env:
           FILTER_REGEX_EXCLUDE: "(README.md|\\.github/.*)"
           VALIDATE_ALL_CODEBASE: false
-          VALIDATE_GITHUB_ACTIONS: false
-          TYPESCRIPT_ES_CONFIG_FILE: tsconfig.json
           VALIDATE_TSX: true
           VALIDATE_TYPESCRIPT_ES: true
           VALIDATE_TYPESCRIPT_PRETTIER: true
