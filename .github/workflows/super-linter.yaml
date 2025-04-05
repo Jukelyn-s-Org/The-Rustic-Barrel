@@ -35,5 +35,9 @@ jobs:
           VALIDATE_JAVASCRIPT_PRETTIER: true
           VALIDATE_JSCPD: false
           TYPESCRIPT_ES_CONFIG_FILE: tsconfig.json
+          VALIDATE_TSX: true
+          VALIDATE_TYPESCRIPT_ES: true
+          VALIDATE_TYPESCRIPT_PRETTIER: true
+          VALIDATE_TYPESCRIPT_STANDARD: true
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
