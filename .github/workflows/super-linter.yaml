@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   run-lint:
-    runs-on: blacksmith-4vcpu-ubuntu-2204
+    runs-on: blacksmith-2vcpu-ubuntu-2204-arm
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
